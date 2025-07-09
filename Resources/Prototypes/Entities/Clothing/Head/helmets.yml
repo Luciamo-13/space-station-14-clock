@@ -568,3 +568,29 @@
     itemIconStyle: BigItem
   - type: InstantAction
     event: !type:ToggleActionEvent
+#Dreadgunnerhood
+- type: entity
+  parent: [ClothingHeadBase]
+  id: Dreadgunnerhood
+  name: Dread gunner hood
+  description: A putrid smelling scrap of fabric and metal, it forms a slightly protective hood.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/dreadgunnerhood.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/dreadgunnerhood.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+        Caustic: 0.95
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair

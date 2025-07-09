@@ -49,6 +49,7 @@
         whitelist:
           tags:
             - MagazineLightRifleBox
+            - Ammobeltlight
       gun_chamber:
         name: Chamber
         startingItem: CartridgeLightRifle
@@ -127,3 +128,55 @@
       autoRecharge: true
       autoRechargeRate: 25
     - type: AmmoCounter
+
+#dreadgun
+- type: entity
+  name: Dreadgun
+  id: WeaponDreadGun
+  parent: [BaseWeaponLightMachineGun]
+  description: A crude machine gun made by Wafflecorp remnants during the pull out. It's purely belt fed with no mag well, and designed for squads of Dread Gunners. 
+  components:
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/LMGs/dreadgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/LMGs/dreadgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 10000
+  - type: Gun
+    minAngle: 25
+    maxAngle: 50
+    angleIncrease: 24
+    angleDecay: 24
+    fireRate: 16
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineAmmobeltlight
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Ammobeltlight

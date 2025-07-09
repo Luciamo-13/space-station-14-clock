@@ -211,3 +211,25 @@
     steps: 8
     zeroVisible: false
   - type: Appearance
+
+#Ammobeltlight
+- type: entity
+  id: MagazineAmmobeltlight
+  name: "Ammo Belt (.30 rifle)"
+  parent: BaseMagazineLightRifle
+  description: The first ones killed were on the science team. Scraps of their fabric become a symbol of death over the years.
+  components:
+  - type: Tag
+    tags:
+      - Ammobeltlight
+  - type: BallisticAmmoProvider
+    proto: CartridgeLightRifle
+    capacity: 60
+  - type: Item
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_belt.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: Appearance

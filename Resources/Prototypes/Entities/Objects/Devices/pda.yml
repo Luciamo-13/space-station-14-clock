@@ -1530,3 +1530,21 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+#Dreadgunnerpda
+- type: entity
+  parent: BasePDA
+  id: DreadgunnerPDA
+  name: Dread gunner PDA
+  description: You killed for this! No seriously!
+  components:
+  - type: Pda
+    id: DreadgunnerIDCard
+  - type: PdaBorderColor
+    borderColor: "#726E19"
+  - type: Icon
+    state: pda-dreadgunner
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-dreadgunner

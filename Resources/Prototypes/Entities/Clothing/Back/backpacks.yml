@@ -406,3 +406,40 @@
   - type: Storage
     grid:
     - 5,5,11,8
+#Dreadgunnerpack
+- type: entity
+  parent: ClothingBackpack
+  id: Dreadgunnerpack
+  name: Dread gunner's ammopack
+  description: Torn, for easy access to belts of ammo!
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/dreadgunnerammopack.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: Storage
+    grid:
+    - 0,0,6,3
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  # to prevent bag open/honk spam
+  - type: UseDelay
+    delay: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - Backpack

@@ -39,6 +39,18 @@
     - state: idpassenger
   - type: PresetIdCard
     job: Passenger
+#Dreadgunner id
+- type: entity
+  parent: IDCardStandard
+  id: DreadgunnerIDCard
+  name: Dreadgunner ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: iddreadgunner
+  - type: PresetIdCard
+    job: dreadgunner
 
 - type: entity
   parent: PassengerIDCard

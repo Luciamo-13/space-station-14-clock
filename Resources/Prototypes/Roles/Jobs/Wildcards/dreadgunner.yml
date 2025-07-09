@@ -1,0 +1,41 @@
+- type: job
+  id: Dreadgunnerjob
+  name: Dread Gunner
+  description: Work for the highest bidder, a true unprofessional mercenary!
+  playTimeTracker: JobDreadgunner
+  startingGear: DreadgunnerGear
+  icon: "JobIconDreadgunner"
+  supervisors: job-supervisors-hop
+  access: 
+  - Service
+  - Maintenance
+#  special:
+#  - !type:GiveItemOnHolidaySpecial
+#    holiday: BoxingDay
+#    prototype: ClothingHandsGlovesBoxingRigged
+
+#- type: startingGear
+  #id: BoxerGear
+  #equipment:
+    #id: DreadgunnerPDA
+    #ears: ClothingHeadsetService
+    #shoes: ClothingShoesColorRed
+    #belt: ClothingBeltChampion
+  #storage:
+    #back:
+    #- Stuff
+
+#- type: chameleonOutfit
+#  id: BoxerChameleonOutfit
+#  job: Boxer
+#  equipment:
+#    head: ClothingHeadHatBlacksoft
+#    eyes: ClothingEyesGlassesCheapSunglasses
+#    mask: ClothingMaskBreath
+#    outerClothing: ClothingOuterWinterColorGray
+#    jumpsuit: UniformShortsRedWithTop
+#    neck: ClothingNeckScarfStripedRed
+
+- type: playTimeTracker
+  id: JobDreadgunner
+  

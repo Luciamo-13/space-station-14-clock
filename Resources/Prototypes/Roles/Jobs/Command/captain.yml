@@ -1,7 +1,7 @@
 - type: job
   id: Captain
-  name: job-name-captain
-  description: job-description-captain
+  name: Baron
+  description: Lead the survivors, it is your duty as a remnants of the Captain's Union.
   playTimeTracker: JobCaptain
   requirements:
     - !type:DepartmentTimeRequirement

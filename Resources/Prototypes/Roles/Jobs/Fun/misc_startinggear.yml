@@ -189,3 +189,14 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
     shoes: ClothingShoesColorBlack
+
+# Passenger but without the ID, bag, or headset
+- type: startingGear
+  id: DreadgunnerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+    shoes: ClothingShoesColorBlack
+    outerClothing: Dreadgunnerarmor
+    head: Dreadgunnerhood
+    back: Dreadgunnerpack
+    inhand: WeaponDreadGun

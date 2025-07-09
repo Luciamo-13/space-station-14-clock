@@ -182,3 +182,32 @@
     chambers: [ null, null, null, null, null ]
     ammoSlots: [ null, null, null, null, null ]
 
+- type: entity
+  name: Junkrounder
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: WeaponRevolverJunkrounder
+  description: People with no skill, no gun knowledge, and nothing to lose use these. Can load most types of ammo, don't expect to hit much past a yard.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/junkrounder.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Revolvers/junkrounder.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum
+        - CartridgePistol
+        - CartridgeLightRifle
+        - CartridgeCaselessRifle
+        - CartridgeAntiMateriel
+        - ShellShotgun
+      proto: null
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+  - type: Gun
+    minAngle: 10
+    maxAngle: 70
+    angleIncrease: 30
+    angleDecay: 30
+    fireRate: 1.25

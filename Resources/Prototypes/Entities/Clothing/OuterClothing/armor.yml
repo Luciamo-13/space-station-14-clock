@@ -127,7 +127,7 @@
   parent: [ClothingOuterArmorBaseCarapace, BaseCommandContraband]
   id: ClothingOuterArmorCaptainCarapace
   name: captain's carapace
-  description: An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest.
+  description: Old and worn, this rugged set of armor has stood the test of time, almost preventing many captain, and now baron deaths!
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Armor/captain_carapace.rsi
@@ -491,3 +491,24 @@
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
 
+#dreadgunner.rsi
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  id: Dreadgunnerarmor
+  name: Dread gunner trappings
+  description: Cloth and twisted metal, crude protection for the waster with a big bang stick.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/dreadgunnerarmor.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/dreadgunnerarmor.rsi
+  - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.80
+        Piercing: 0.80 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
+        Heat: 0.90
+        Caustic: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.90

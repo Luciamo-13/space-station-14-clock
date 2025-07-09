@@ -308,6 +308,14 @@
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Chef
   jobName: job-name-chef
+  #dreadgunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconDreadgunner
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Dreadgunner
+  jobName: job-name-dreadgunner
 
 - type: jobIcon
   parent: JobIcon
